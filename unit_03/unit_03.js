@@ -22,7 +22,14 @@ let a21 = 45;
 let a22 = 32;
 
 function f2(){
-
+   
+   let out = document.querySelector('.out-2');
+   if (a21 > a22){
+      out.innerHTML = a21;
+   }
+   else {
+      out.innerHTML = a21;
+   }
 }
 
 document.querySelector('.b-2').onclick = f2;
