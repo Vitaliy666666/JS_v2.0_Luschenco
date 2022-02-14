@@ -22,7 +22,6 @@ let a21 = 45;
 let a22 = 32;
 
 function f2(){
-   
    let out = document.querySelector('.out-2');
    if (a21 > a22){
       out.innerHTML = a21;
@@ -40,7 +39,14 @@ document.querySelector('.b-2').onclick = f2;
 // Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.
 
 function f3(){
-
+   let a =  +document.querySelector('.i-31').value;
+   let b =  +document.querySelector('.i-32').value;
+   let result = document.querySelector('.out-3');
+      if (a > b) {
+         result.innerHTML = Number(a);
+      }
+     else  
+         result.innerHTML = Number(b);
 }
 
 document.querySelector('.b-3').onclick = f3;
