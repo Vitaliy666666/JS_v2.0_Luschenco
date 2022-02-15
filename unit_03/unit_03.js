@@ -72,15 +72,17 @@ document.querySelector('.b-4').onclick = f4;
 // На странице есть input c классом i-5, куда пользователь может ввести число. Есть кнопка b-5 которая запускает функцию f5. Функция должна вывести в .out-5 символ 'm' если число меньше нуля, 0 если число равно нулю и число 1 если больше.
 
 function f5(){
+   //const button = document.querySelector('.b-5')
    let sum = +document.querySelector('.i-5').value;
    let out = document.querySelector('.out-5');
+   
       if (sum < 0) {
-      out.textContent = 'm';
+      out.innerHTML = 'm';
       }
       else if (sum == 0){
       out.innerHTML = 0;
       }
-      else (sum > 0) 
+      else 
       out.innerHTML = 1;
      
 }
@@ -92,13 +94,15 @@ document.querySelector('.b-5').onclick = f5;
 // На странице есть input с классом i-6, куда пользователь может ввести число. Есть кнопка .b-6 которая запускает функцию f6. Функция должна вывести в  .out-6  слово even если число четное и odd если нечетное. Для проверки четности используется целочисленный остаток от деления на 2 (оператор %). Если остаток равен нулю  - четное, нет - нечетное.
 
 function f6(){
-   let sum = +document.querySelector('.i-6').value;
+   let sum = document.querySelector('.i-6').value;
    let out = document.querySelector('.out-6');
-   //if (sum )
-   // out.textContent = 'even'
-
-  // else
-  //out.textContent = 'odd'
+   if (sum % 2 == 0) { 
+		out.innerHTML = 'even'
+	} else {
+		out.innerHTML = 'odd'
+	}
+   
+   
 }
 
 document.querySelector('.b-6').onclick = f6;
