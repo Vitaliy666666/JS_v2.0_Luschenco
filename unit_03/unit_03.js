@@ -146,6 +146,19 @@ document.querySelector('.b-8').onclick = f8;
 //  В противном случае, вывести 0.
 
 function f9(){
+   let apartNumber = +document.querySelector('.i-9').value;
+   let out = document.querySelector('.out-9');
+   if (apartNumber == 1 || apartNumber < 32 || apartNumber == 32){
+      out.innerHTML = 1;
+   }
+   if (apartNumber == 33 || apartNumber < 43 || apartNumber == 43){
+      out.innerHTML = 2;
+   }
+   if (apartNumber == 44 || apartNumber < 64 || apartNumber == 64){
+      out.innerHTML = 3;
+   }
+   else
+   out.innerHTML = 0;
 
 }
 
