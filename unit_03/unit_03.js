@@ -111,7 +111,10 @@ document.querySelector('.b-6').onclick = f6;
 // Даны 2 input - .i-71 и .i-72, оба - input[type=number]. При нажатии кнопки .b-7 срабатывает функция f7. Функция должна число из .i-71 возвести в степень .i-72, вывести результат в  .out-7. Для возведения в степень можно использовать **, или Math.pow.
 
 function f7(){
-
+   let sumA = +document.querySelector('.i-71').value;
+   let sumB = +document.querySelector('.i-72').value;
+   let out = document.querySelector('.out-7');
+   out.innerHTML = Math.pow(sumA, sumB);
 }
 
 document.querySelector('.b-7').onclick = f7;
