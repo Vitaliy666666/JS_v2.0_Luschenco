@@ -168,8 +168,22 @@ document.querySelector('.b-9').onclick = f9;
 // Дан select .s-100. По нажатию кнопки, выведите value выбранного option в .out-10.
 
 function f10(){
+   let o = document.querySelector('.s-100');
+   let out = document.querySelector('.out-10')
+   let t = o.options[o.selectedIndex].text;
+   out.textContent= o.options[o.selectedIndex].innerHTML
+   //if(t == 'six') {
+    // out.textContent += o;
+   // } else if(t == 'seven') {
+      //out.textContent += o;
+   // } else if(t == 'eleven') {
+     // out.textContent += o;
+   // } else if(t == 'nine') {
+    //  out.textContent += o;
+    
+    
+  }
 
-}
 
 document.querySelector('.b-10').onclick = f10;
 
@@ -177,7 +191,10 @@ document.querySelector('.b-10').onclick = f10;
 // Дан select .s-110. По изменению состояния select (событие onchange) выведите value выбранного option в .out-11.
 
 function f11(){
-
+   let option = document.querySelector('.s-110').value;
+   
+   let out = document.querySelector('.out-11')
+   
 }
 
 document.querySelector('.s-110').onchange = f11;
