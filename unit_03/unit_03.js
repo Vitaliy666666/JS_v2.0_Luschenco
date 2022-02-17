@@ -182,9 +182,8 @@ document.querySelector('.b-10').onclick = f10;
 
 function f11(){
    let option = document.querySelector('.s-110').value;
-   
    let out = document.querySelector('.out-11')
-   
+   out.innerHTML = option;
 }
 
 document.querySelector('.s-110').onchange = f11;
@@ -195,8 +194,8 @@ document.querySelector('.s-110').onchange = f11;
 let i120 = document.querySelector('.i-120');
 
 function f12(){
-   // let v = i120.value;
-   // document.querySelector('.out-12').innerHTML = (typeof v);
+    let v = i120.value;
+    document.querySelector('.out-12').innerHTML = (typeof v);
 
 }
 
@@ -204,8 +203,12 @@ document.querySelector('.b-12').onclick = f12;
 
 // Task 13
 // Дан input i-130. В отличие от предыдущего задания - input type number. По нажатию кнопки получите значение из input  в переменную, а затем выведите в out-13 typeof полученной переменной. Typeof позволяет определить тип данных. Если вы правильно все сделали - то удивительно, но тип данных будет string! Подумайте почему так?
+let i130 = document.querySelector('.i-130');
 
 function f13(){
+   let s = i130.value;
+    document.querySelector('.out-13').innerHTML = (typeof s);
+
 
 }
 
