@@ -172,16 +172,6 @@ function f10(){
    let out = document.querySelector('.out-10')
    let t = o.options[o.selectedIndex].text;
    out.textContent= o.options[o.selectedIndex].innerHTML
-   //if(t == 'six') {
-    // out.textContent += o;
-   // } else if(t == 'seven') {
-      //out.textContent += o;
-   // } else if(t == 'eleven') {
-     // out.textContent += o;
-   // } else if(t == 'nine') {
-    //  out.textContent += o;
-    
-    
   }
 
 
