@@ -219,9 +219,26 @@ document.querySelector('.b-13').onclick = f13;
 // Дан input .i-141 и .i-142, type=number.  Дан select .s-143, который содержит две операции - +, -, *, / . Дана кнопка b-14, при нажатии на которую срабатывает функция f14. Функция выводит в .out-14 результат операций выбранной в 3-м select к числам введенным в первом и втором input. Например выбрано 1 13 +, нужно вывести результат операции 1+13 т.е.  14.
 
 function f14(){
-
+   let inA = +document.querySelector('.i-141').value;
+   let inB = +document.querySelector('.i-142').value;
+   let sel = document.querySelector('.s-143').value;
+   let out = document.querySelector('.out-14');
+   
+   switch (sel) {
+      case '+' :
+         out.innerHTML = inA + inB
+      break;
+      case '-' :
+         out.innerHTML = inA - inB
+      break;
+      case '*' :
+         out.innerHTML = inA * inB
+      break;
+      case '/' :
+         out.innerHTML = inA / inB
+      break;
+      }
 }
-
 document.querySelector('.b-14').onclick = f14;
 
 
@@ -233,6 +250,5 @@ function f15(){
 }
 
 document.querySelector('.b-15').onclick = f15;
-
 
 
