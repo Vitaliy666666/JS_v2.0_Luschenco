@@ -16,6 +16,8 @@ document.querySelector('.b-1').onclick = f1;
 // При нажатии (click) на .i-2 запускайте f2, которая выводите в .out-2 число 2. Т.е. как видите, мы можем повесить клик на любой элемент.
 
 function f2() {
+    let out = document.querySelector('.out-2');
+    out.innerHTML = 2;
 
 }
 
