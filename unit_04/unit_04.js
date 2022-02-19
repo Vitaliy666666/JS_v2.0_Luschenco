@@ -39,7 +39,13 @@ document.querySelector('.p-3').onclick = f3;
 // При клике по кнопке .b-4 запускается функция f4. Функция проверяет состояние .i-4 и если он checked - выводит true, если не выбран - false. Вывод везде в задачах, где не указано другое, осуществляется в div.out-номер задачи. В данном случае - div.out-4
 
 function f4() {
-
+    let ch = document.querySelector('.i-4');
+    let out = document.querySelector('.out-4');
+    if (ch.checked) {
+        out.innerHTML = 'true'
+    }
+    else
+        out.innerHTML = 'false'
 }
 
 document.querySelector('.b-4').onclick = f4;
