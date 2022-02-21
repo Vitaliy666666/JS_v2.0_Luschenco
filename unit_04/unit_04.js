@@ -204,7 +204,9 @@ document.querySelector('.b-15').onclick = f15;
 
 function f16() {
     // для получения выбранного option просто получите select в переменную и select.value;
-
+    let a = document.querySelector('.s-16').value;
+    let out = document.querySelector('.out-16');
+    out.innerHTML = a; 
 }
 
 document.querySelector('.b-16').onclick = f16;
