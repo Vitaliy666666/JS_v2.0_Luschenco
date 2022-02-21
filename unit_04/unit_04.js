@@ -103,6 +103,9 @@ document.querySelector('.b-7').onclick = f7;
 // При нажатии кнопки .b-8 запускается функция f8. Функция с помощью innerHTML создает в .out-8 новый div с классом "js2" и текстом "new div". Нажали несколько раз? Создаем несколько раз!
 
 function f8() {
+    let sum 
+    let out = document.querySelector('.out-8')
+    out.innerHTML = document.querySelector('.js2').value;
 }
 
 document.querySelector('.b-8').onclick = f8;
@@ -111,7 +114,15 @@ document.querySelector('.b-8').onclick = f8;
 // При нажатии кнопки .b-9 запускаем функцию f9. Функция проверяет checked элемента .r-9. Если элемент выбран (checked) то выводит в .out-9 value radiobutton. Если не выбран - выводит false.
 
 function f9() {
-
+    let ch = document.querySelector('.r-9');
+    let a = ch.value;
+    let out = document.querySelector('.out-9');
+    if (ch.checked){
+        out.innerHTML = a;
+    }
+    else
+        out.innerHTML = false;
+    
 }
 
 document.querySelector('.b-9').onclick = f9;
