@@ -72,7 +72,9 @@ document.querySelector('.b-5').onclick = f5;
 // При нажатии на кнопку выводите value из input.i-6 в div.out-6. Обратите внимание, что даже скрытый hidden input - нам не помеха. 
 
 function f6() {
-
+    let ch = +document.querySelector('.i-6').value;
+    let out = document.querySelector('.out-6');
+    out.innerHTML = ch;
 }
 
 document.querySelector('.b-6').onclick = f6;
