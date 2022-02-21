@@ -188,6 +188,12 @@ document.querySelector('.b-14').onclick = f14;
 // При нажатии кнопки .b-15 функция должна выводить текст из .i-15 в textarea .t-15 и в .out-15.
 
 function f15() {
+    let a = document.querySelector('.i-15').value;
+    let b = document.querySelector('.t-15');
+    let out = document.querySelector('.out-15');
+    b.innerHTML = a;
+    out.innerHTML = a;
+
 
 }
 
