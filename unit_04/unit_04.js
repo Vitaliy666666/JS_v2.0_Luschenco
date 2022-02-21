@@ -177,7 +177,9 @@ document.querySelector('.i-13').oninput = f13;
 // При нажатии на кнопку выводите текст из textarea .t-14 в .out-14.
 
 function f14() {
-
+    let a = document.querySelector('.t-14').value;
+    let out = document.querySelector('.out-14');
+    out.innerHTML = a; 
 }
 
 document.querySelector('.b-14').onclick = f14;
