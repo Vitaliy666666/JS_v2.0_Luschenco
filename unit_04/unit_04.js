@@ -83,7 +83,18 @@ document.querySelector('.b-6').onclick = f6;
 // При нажатии на кнопку выводите в div.out-71 value прописанное в input .i-7. В .out-72 выводите 1 если длина пароля больше или равна 6 или 0 если меньше. Для подсчета количества символов в строке используйте length.
 
 function f7() {
-
+    let sum = document.querySelector('.i-7').value;
+    let aa = sum.length;
+    let outPassword = document.querySelector('.out-71');
+    let outNumber = document.querySelector('.out-72');
+    if (aa >= 6){   
+        outNumber.innerHTML = 1;
+        outPassword.innerHTML = sum;
+    }
+    else
+        outNumber.innerHTML = 0;
+        outPassword.innerHTML = sum;
+    
 }
 
 document.querySelector('.b-7').onclick = f7;
