@@ -215,7 +215,9 @@ document.querySelector('.b-16').onclick = f16;
 // При смене выбранного значения .s-17 выводите в .out-17 value выбранного option из .s-17.
 
 function f17() {
-
+    let a = document.querySelector('.s-17').value;
+    let out = document.querySelector('.out-17');
+    out.innerHTML = a; 
 }
 
 document.querySelector('.s-17').onchange = f17;
