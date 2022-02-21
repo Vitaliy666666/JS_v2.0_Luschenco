@@ -146,7 +146,7 @@ function f11() {
     document.querySelector('.i-112').value = document.querySelector('.i-111').value;
     
     
-}
+}   
 
 document.querySelector('.b-11').onclick = f11;
 
@@ -154,6 +154,9 @@ document.querySelector('.b-11').onclick = f11;
 // При нажатии кнопки .b-12 запускается функция f12. Функция выводит дату из .i-12 в out-12.
 
 function f12() {
+    let a = document.querySelector('.i-12').value;
+    let out = document.querySelector('.out-12');
+    out.innerHTML = a;
 
 }
 
