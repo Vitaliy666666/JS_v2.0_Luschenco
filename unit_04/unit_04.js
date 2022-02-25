@@ -241,7 +241,6 @@ function f19() {
     let b = document.querySelector('.out-19');
     let c = b.textContent
     a.value = c;
-    //console.log(c)
     
 
 }
@@ -254,10 +253,9 @@ document.querySelector('.b-19').onclick = f19;
 function f20() {
     let a = document.querySelector('.s-201').value;
     let b = document.querySelector('.s-202');
-    //let a1 = a.value;
-    let b1 = b.value;
-    console.log('a')
+    b.value = a
     
+   
 }
 
 document.querySelector('.s-201').onchange = f20;
