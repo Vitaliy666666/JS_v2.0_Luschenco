@@ -226,7 +226,9 @@ document.querySelector('.s-17').onchange = f17;
 // При смене выбранного значения в s-18, получайте из него value выбранного option и присвойте данный value в input .i-18.
 
 function f18() {
-
+   let a = document.querySelector('.s-18');
+   let b = document.querySelector('.i-18');
+   b.value = (a.value);
 }
 
 document.querySelector('.s-18').onchange = f18;
