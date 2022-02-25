@@ -228,7 +228,7 @@ document.querySelector('.s-17').onchange = f17;
 function f18() {
    let a = document.querySelector('.s-18');
    let b = document.querySelector('.i-18');
-   b.value = (a.value);
+   b.value = a.value;
 }
 
 document.querySelector('.s-18').onchange = f18;
@@ -237,6 +237,12 @@ document.querySelector('.s-18').onchange = f18;
 // На странице создан div.out-19. По нажатию кнопки, получите из него текст и присвойте в value элемента .i-19.
 
 function f19() {
+    let a = document.querySelector('.i-19');
+    let b = document.querySelector('.out-19');
+    let c = b.textContent
+    a.value = c;
+    //console.log(c)
+    
 
 }
 
@@ -246,7 +252,12 @@ document.querySelector('.b-19').onclick = f19;
 // У вас есть два select. Напишите код, который при изменении select .s-201 будет аналогично изменять выбранный option в .s-202.
 
 function f20() {
-
+    let a = document.querySelector('.s-201').value;
+    let b = document.querySelector('.s-202');
+    //let a1 = a.value;
+    let b1 = b.value;
+    console.log('a')
+    
 }
 
 document.querySelector('.s-201').onchange = f20;
