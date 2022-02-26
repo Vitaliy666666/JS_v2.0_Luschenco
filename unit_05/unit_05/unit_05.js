@@ -9,7 +9,7 @@ function t1() {
     for (let i = 0; i < 17; i++ ){
         out += i + ' ';
     }
-    document.querySelector('.out-1').innerHTML = out
+    document.querySelector('.out-1').innerHTML = out;
 }
 
 document.querySelector('.b-1').onclick = t1;
@@ -20,7 +20,11 @@ document.querySelector('.b-1').onclick = t1;
 //Разделитель - нижнее подчеркивание. Задача решается с помощью цикла.
 
 function t2() {
-
+    let out = '';
+    for (let i = 12; i < 39; i++ ){
+        out += i + ' ';
+    }
+    document.querySelector('.out-2').innerHTML = out;
 }
 
 document.querySelector('.b-2').onclick = t2;
