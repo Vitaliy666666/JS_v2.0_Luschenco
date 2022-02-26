@@ -36,7 +36,11 @@ document.querySelector('.b-2').onclick = t2;
 // Разделитель - нижнее подчеркивание. Задача решается с помощью цикла.
 
 function t3() {
-
+    let out = '';
+    for (let i = 25; i > 6; i-- ){
+        out += i + ' ';
+    }
+    document.querySelector('.out-3').innerHTML = out;
 }
 
 document.querySelector('.b-3').onclick = t3;
