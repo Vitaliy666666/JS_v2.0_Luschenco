@@ -5,7 +5,11 @@
 
 
 function t1() {
-
+    let out = '';
+    for (let i = 0; i < 17; i++ ){
+        out += i + ' ';
+    }
+    document.querySelector('.out-1').innerHTML = out
 }
 
 document.querySelector('.b-1').onclick = t1;
