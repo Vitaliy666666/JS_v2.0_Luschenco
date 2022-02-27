@@ -52,6 +52,11 @@ document.querySelector('.b-3').onclick = t3;
 
 
 function t4() {
+    let out = '';
+    for (let i = 12; i < 39; i++ ){
+        out += i + ' ';
+    }
+    document.querySelector('.out-4').innerHTML = out;
 
 }
 
