@@ -53,7 +53,7 @@ document.querySelector('.b-3').onclick = t3;
 
 function t4() {
     let out = '';
-    for (let i = 12; i < 39; i++ ){
+    for (let i = 77; i > 32; i = i - 3 ){
         out += i + ' ';
     }
     document.querySelector('.out-4').innerHTML = out;
