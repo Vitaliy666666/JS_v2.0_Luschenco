@@ -94,7 +94,14 @@ document.querySelector('.b-5').onclick = t5;
 //
 
 function t6() {
-
+    let inp6 = document.querySelector('.i-6');
+        let count = 0; // Заводим счётчик(так как непонятно чего конкретно хотите этим добиться. Поле inp.value уже содержит нужное значение.)
+        document.querySelector('.out-6').innerHTML = ''; // Очищаем поле.
+        for (let i = 0; i < inp6.value; i++) { // inp6.value
+            document.querySelector('.out-6').innerHTML += '******' + '<br>'; // Дописываем строку.
+            count += 1;
+        }
+        inp6.value = count; // Записываем в поле счётчик. Вы в данное поле могли просто записать inp6.value = inp6.value; Но опять таки это поле УЖЕ содержит это значение, мы же оттуда его и взяли.
 }
 
 document.querySelector('.b-6').onclick = t6;
