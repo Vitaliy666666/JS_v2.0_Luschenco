@@ -117,7 +117,7 @@ function t7() {
     for (let i = inp7.value; i >= 0; i = i - 1 ){
         out += i + ' ';
     }
-   console.log(document.querySelector('.out-7').innerHTML = out)
+    document.querySelector('.out-7').innerHTML = out;
 
 }
 document.querySelector('.b-7').onclick = t7;
@@ -132,6 +132,13 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла.
 
 function t8() {
+    let out = '';
+    let inpA = document.querySelector('.i-81');
+    let inpB = document.querySelector('.i-82');
+    for ( let i = inpA.value; i <= inpB.value; i++ ){
+        out += i + ' ';
+    }
+    document.querySelector('.out-8').innerHTML = out;
 
 }
 
