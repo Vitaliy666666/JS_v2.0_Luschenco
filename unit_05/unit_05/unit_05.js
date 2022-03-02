@@ -156,8 +156,22 @@ document.querySelector('.b-8').onclick = t8;
 // цикл - один
 
 function t9() {
+    let in91 = +document.querySelector('.i-91').value;
+    let in92 = +document.querySelector('.i-92').value;
+    
+    if (in91 > in92) {
+      [in91, in92] = [in92, in91];
+    }
+  
+    let out9 = '';
+    for (let i = in91; i <= in92; i++ ) {
+      out9 += i + ' ';
+    }
+  
+    document.querySelector('.out-9').innerHTML = out9;
+  }
 
-}
+
 
 document.querySelector('.b-9').onclick = t9;
 
