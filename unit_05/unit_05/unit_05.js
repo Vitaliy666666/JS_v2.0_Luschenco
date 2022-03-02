@@ -70,7 +70,7 @@ document.querySelector('.b-4').onclick = t4;
 
 function t5() {
     let out = '';
-    for (let i =1 ;i < 18;i++){
+    for (let i = 1 ;i < 18;i++){
         if( i % 2){
             out += i + ' ' + '*';
         }
@@ -95,13 +95,10 @@ document.querySelector('.b-5').onclick = t5;
 
 function t6() {
     let inp6 = document.querySelector('.i-6');
-        let count = 0; // Заводим счётчик(так как непонятно чего конкретно хотите этим добиться. Поле inp.value уже содержит нужное значение.)
-        document.querySelector('.out-6').innerHTML = ''; // Очищаем поле.
-        for (let i = 0; i < inp6.value; i++) { // inp6.value
-            document.querySelector('.out-6').innerHTML += '******' + '<br>'; // Дописываем строку.
-            count += 1;
+        document.querySelector('.out-6').innerHTML = '';
+        for (let i = 0; i < inp6.value; i++) {
+            document.querySelector('.out-6').innerHTML += '******' + '<br>';
         }
-        inp6.value = count; // Записываем в поле счётчик. Вы в данное поле могли просто записать inp6.value = inp6.value; Но опять таки это поле УЖЕ содержит это значение, мы же оттуда его и взяли.
 }
 
 document.querySelector('.b-6').onclick = t6;
@@ -115,9 +112,14 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла.
 
 function t7() {
+    let out = '';
+    let inp7 = document.querySelector('.i-7');
+    for (let i = inp7.value; i >= 0; i = i - 1 ){
+        out += i + ' ';
+    }
+   console.log(document.querySelector('.out-7').innerHTML = out)
 
 }
-
 document.querySelector('.b-7').onclick = t7;
 
 
