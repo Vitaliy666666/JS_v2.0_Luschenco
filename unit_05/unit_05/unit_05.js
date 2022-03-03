@@ -203,10 +203,10 @@ document.querySelector('.b-10').onclick = t10;
 
 
 function t11() {
-
+    
 }
 
-document.querySelector('.b-11').onclick = t11;
+    document.querySelector('.b-11').onclick = t11;
 
 //  Task 12
 // Кнопка .b-12 запускает функцию t12.  Функция должна:
@@ -216,7 +216,10 @@ document.querySelector('.b-11').onclick = t11;
 
 
 function t12() {
-
+    let divs = document.querySelectorAll('.div-12');
+    for (i = 0; i < divs.length; i++){
+        divs[i].style.background = 'orange';
+    }
 }
 
 document.querySelector('.b-12').onclick = t12;
