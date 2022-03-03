@@ -207,7 +207,6 @@ function t11() {
     let out = '';
      for (let i = 0; i < divs.length; i++ ){
         out += divs[i].innerHTML + ' ';
-        console.log(divs[i].innerHTML)
     }
      document.querySelector('.out-11').innerHTML = out;
 }
@@ -234,7 +233,12 @@ document.querySelector('.b-12').onclick = t12;
 // С помощью цикла присвойте всем input .i-13 value равное 1 для первого, 2 для второго и 3 для третьего.
 
 function t13() {
+    let input = document.querySelectorAll('.i-13');
+    for(i = 0; i < input.length; i++){
+        input[i].value = i + 1;  
 
+
+    }
 }
 
 document.querySelector('.b-13').onclick = t13;
