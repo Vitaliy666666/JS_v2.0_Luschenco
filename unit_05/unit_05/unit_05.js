@@ -7,7 +7,7 @@
 function t1() {
     let out = '';
     for (let i = 0; i < 17; i++ ){
-        out += i + ' ';
+        out += i + '_';
     }
     document.querySelector('.out-1').innerHTML = out;
 }
@@ -22,7 +22,7 @@ document.querySelector('.b-1').onclick = t1;
 function t2() {
     let out = '';
     for (let i = 12; i < 39; i++ ){
-        out += i + ' ';
+        out += i + '_';
     }
     document.querySelector('.out-2').innerHTML = out;
 }
@@ -38,7 +38,7 @@ document.querySelector('.b-2').onclick = t2;
 function t3() {
     let out = '';
     for (let i = 25; i > 6; i-- ){
-        out += i + ' ';
+        out += i + '_';
     }
     document.querySelector('.out-3').innerHTML = out;
 }
@@ -54,7 +54,7 @@ document.querySelector('.b-3').onclick = t3;
 function t4() {
     let out = '';
     for (let i = 77; i > 32; i = i - 3 ){
-        out += i + ' ';
+        out += i + '_';
     }
     document.querySelector('.out-4').innerHTML = out;
 
@@ -72,10 +72,10 @@ function t5() {
     let out = '';
     for (let i = 1 ;i < 18;i++){
         if( i % 2){
-            out += i + ' ' + '*';
+            out += i + '_' + '*';
         }
         else 
-            out += i + ' ' + '**';
+            out += i + '_' + '**';
     }
     document.querySelector('.out-5').innerHTML = out;
 }
@@ -115,7 +115,7 @@ function t7() {
     let out = '';
     let inp7 = document.querySelector('.i-7');
     for (let i = inp7.value; i >= 0; i = i - 1 ){
-        out += i + ' ';
+        out += i + '_';
     }
     document.querySelector('.out-7').innerHTML = out;
 
@@ -136,7 +136,7 @@ function t8() {
     let inpA = document.querySelector('.i-81');
     let inpB = document.querySelector('.i-82');
     for ( let i = inpA.value; i <= inpB.value; i++ ){
-        out += i + ' ';
+        out += i + '_';
     }
     document.querySelector('.out-8').innerHTML = out;
 
@@ -165,7 +165,7 @@ function t9() {
   
     let out9 = '';
     for (let i = in91; i <= in92; i++ ) {
-      out9 += i + ' ';
+      out9 += i + '_';
     }
   
     document.querySelector('.out-9').innerHTML = out9;
@@ -184,7 +184,7 @@ function t10() {
     let out = '';
     for (let i = 1950 ;i <= 1970; i = i + 2){
         if( i % 1000){
-            out += i + ' ';
+            out += i + '_';
         }
 
     }
@@ -206,7 +206,7 @@ function t11() {
     let divs = document.querySelectorAll('.div-11');
     let out = '';
      for (let i = 0; i < divs.length; i++ ){
-        out += divs[i].innerHTML + ' ';
+        out += divs[i].innerHTML + '_';
     }
      document.querySelector('.out-11').innerHTML = out;
 }
@@ -273,7 +273,7 @@ function t15() {
     let a = document.querySelector('.out-15');
     let out = '';
     for (let i = 0; i <= 10; i++){
-        out += (10 - i) + ' ' + i + ' ';
+        out += (10 - i) + '_' + i + '_';
     }
         a.innerHTML = out;
 }
