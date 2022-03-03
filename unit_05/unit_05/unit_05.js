@@ -203,7 +203,13 @@ document.querySelector('.b-10').onclick = t10;
 
 
 function t11() {
-    
+    let divs = document.querySelectorAll('.div-11');
+    let out = '';
+     for (let i = 0; i < divs.length; i++ ){
+        out += divs[i].innerHTML + ' ';
+        console.log(divs[i].innerHTML)
+    }
+     document.querySelector('.out-11').innerHTML = out;
 }
 
     document.querySelector('.b-11').onclick = t11;
@@ -246,7 +252,6 @@ function t14() {
     for (let i = 0; i < ch.length; i++) {
         if (ch[i].checked) {
             out = ch[i].value;
-            //console.log(ch[i].value)
         }
         document.querySelector('.out-14').innerHTML = out;
     }
