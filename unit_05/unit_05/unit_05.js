@@ -241,7 +241,16 @@ document.querySelector('.b-13').onclick = t13;
 
 
 function t14() {
-
+    let ch = document.querySelectorAll('input[type = "radio"]');
+    let out = '';
+    for (let i = 0; i < ch.length; i++) {
+        if (ch[i].checked) {
+            out = ch[i].value;
+            //console.log(ch[i].value)
+        }
+        document.querySelector('.out-14').innerHTML = out;
+    }
+   
 }
 
 document.querySelector('.b-14').onclick = t14;
