@@ -27,7 +27,16 @@ document.querySelector('.b-1').onclick = t1;
 // *_*_*_
 // <p>Решить задачу с помощью вложенных циклов. Внешний цикл выводит цифру и перенос строки br, внутренний - *_, и после этого внешний - знак переноса.</p>
 function t2() {
-
+    let out2 = document.querySelector('.out-2');
+    let out = '';
+    for (let i = 1; i < 4;i++){
+        out += i + '<br>';
+        for( let g = 1;g < 4;g++ ){
+            out += '*_';
+        }
+        out += '<br>'; 
+    }  
+    out2.innerHTML = out;     
 }
 
 document.querySelector('.b-2').onclick = t2;
