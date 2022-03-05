@@ -32,7 +32,7 @@ function t2() {
     for (let i = 1; i < 4;i++){
         out += i + '<br>';
         for( let g = 1;g < 4;g++ ){
-            out += '*_';
+            out += '*_';   
         }
         out += '<br>'; 
     }  
@@ -51,7 +51,15 @@ document.querySelector('.b-2').onclick = t2;
 
 // <p>Решить задачу с помощью вложенных циклов. Внутренний цикл выводит *_,  внешний цикл выводит перенос строки br.</p>
 function t3() {
-
+    let out3 = document.querySelector('.out-3');
+    let out = '';
+    for (let i = 0; i < 4; i++){
+        for (let g = 0; g < 3; g++){
+            out += '*_';
+        }
+        out += '<br>';
+    }
+    out3.innerHTML = out;
 }
 
 document.querySelector('.b-3').onclick = t3;
