@@ -145,6 +145,14 @@ document.querySelector('.b-6').onclick = t6;
 
 function t7() {
     let out7 = document.querySelector('.out-7');
+    let out = '';
+    for(let i = 0;i < 5;i++){
+        for(let g = 0; g < i; g = g + 1) {
+            out += '*';
+    }
+    out += '<br>'
+}
+    out7.innerHTML = out;
 }
 
 document.querySelector('.b-7').onclick = t7;
