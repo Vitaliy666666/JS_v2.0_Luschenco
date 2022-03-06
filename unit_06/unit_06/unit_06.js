@@ -69,7 +69,7 @@ document.querySelector('.b-3').onclick = t3;
 // 1_1*2*3*4*5*2_1*2*3*4*5*3_1*2*3*4*5*
 // Внешний цикл выводит цифру и _, а внутренний выводит от 1 до 5 с *
 function t4() {
-    let out3 = document.querySelector('.out-4');
+    let out4 = document.querySelector('.out-4');
     let out = '';
     for (let i = 1; i < 4; i++){
         out +=  i + '_';
@@ -77,7 +77,7 @@ function t4() {
             out += g + '*';
         }
     }
-    out3.innerHTML = out;
+    out4.innerHTML = out;
 
 
 }
@@ -94,9 +94,21 @@ document.querySelector('.b-4').onclick = t4;
 
 // <p>Вложенный цикл в зависимости от четного или нет k (счетчика цикла) рисует или 0 или 1. Внешний цикл - br.</p>
 function t5() {
+    let out5 = document.querySelector('.out-5');
+    let out = '';
+    for (let i = 0; i < 3; i++){
+        for (let k = 0; k < 6; k++){
+            if(k % 2){
+                out += 0
+            }
+            else
+                out += 1
+        }
+    out +=  '<br>';
+            out5.innerHTML = out;
+    }
 
 }
-
 document.querySelector('.b-5').onclick = t5;
 
 
