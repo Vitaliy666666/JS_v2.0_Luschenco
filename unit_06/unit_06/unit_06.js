@@ -76,7 +76,7 @@ function t4() {
         for (let g = 1; g < 6; g++){
             out += g + '*';
         }
-    }
+    } 
     out4.innerHTML = out;
 
 
@@ -121,7 +121,15 @@ document.querySelector('.b-5').onclick = t5;
 
 
 function t6() {
-
+    let out6 = document.querySelector('.out-6');
+    let out = '';
+    for(let i = 0;i < 3;i++){
+        for(let g = 0; g < 1; g++ ) {
+            out += 10 + 'x'; 
+        }
+        out += '01' + 'x' + '<br>';
+    }
+    out6.innerHTML = out;
 }
 
 document.querySelector('.b-6').onclick = t6;
