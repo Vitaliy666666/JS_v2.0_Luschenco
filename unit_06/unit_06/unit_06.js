@@ -144,7 +144,7 @@ document.querySelector('.b-6').onclick = t6;
 // ****
 
 function t7() {
-
+    let out7 = document.querySelector('.out-7');
 }
 
 document.querySelector('.b-7').onclick = t7;
