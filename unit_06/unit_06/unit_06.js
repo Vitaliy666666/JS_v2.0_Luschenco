@@ -69,6 +69,16 @@ document.querySelector('.b-3').onclick = t3;
 // 1_1*2*3*4*5*2_1*2*3*4*5*3_1*2*3*4*5*
 // Внешний цикл выводит цифру и _, а внутренний выводит от 1 до 5 с *
 function t4() {
+    let out3 = document.querySelector('.out-4');
+    let out = '';
+    for (let i = 1; i < 4; i++){
+        out +=  i + '_';
+        for (let g = 1; g < 6; g++){
+            out += g + '*';
+        }
+    }
+    out3.innerHTML = out;
+
 
 }
 
