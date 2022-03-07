@@ -178,7 +178,7 @@ function t8() {
             out += '*';
         }
             else{
-            out += '_';
+            out += ' ';
             }
     }
     out += '<br>';
