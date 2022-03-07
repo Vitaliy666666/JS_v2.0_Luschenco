@@ -178,7 +178,7 @@ function t8() {
             out += '*';
         }
             else{
-            out += ' ';
+            out += '_';
             }
     }
     out += '<br>';
@@ -200,7 +200,15 @@ document.querySelector('.b-8').onclick = t8;
 // 1_2_3_4_5_
 
 function t9() {
-
+    let out9 = document.querySelector('.out-9');
+    let out = '';
+    for(let i = 1;i < 6;i++){
+        for(let g = 1; g <= i; g++) {
+            out += g + '_';
+    }
+    out += '<br>'
+}
+    out9.innerHTML = out;
 }
 
 document.querySelector('.b-9').onclick = t9;
