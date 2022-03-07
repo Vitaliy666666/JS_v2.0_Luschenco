@@ -146,8 +146,8 @@ document.querySelector('.b-6').onclick = t6;
 function t7() {
     let out7 = document.querySelector('.out-7');
     let out = '';
-    for(let i = 0;i < 4;i++){
-        for(let g = -1; g < i; g++) {
+    for(let i = 1;i < 5;i++){
+        for(let g = 0; g < i; g++) {
             out += '*';
     }
     out += '<br>'
@@ -169,7 +169,22 @@ document.querySelector('.b-7').onclick = t7;
 // *
 
 function t8() {
-
+    let out8 = document.querySelector('.out-8');
+    let out = '';
+    let m = 0;
+    for(let i = 0;i < 5;i++){
+        for(let g = 0; g < 5; g++){
+            if(g >= m){
+            out += '*';
+        }
+            else{
+            out += ' ';
+            }
+    }
+    out += '<br>';
+    m++
+}
+    out8.innerHTML = out;
 }
 
 document.querySelector('.b-8').onclick = t8;
