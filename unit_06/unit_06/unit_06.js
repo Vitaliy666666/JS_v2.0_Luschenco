@@ -225,7 +225,19 @@ document.querySelector('.b-9').onclick = t9;
 
 
 function t10() {
-
+    let out10 = document.querySelector('.out-10');
+    let out = '';
+    for (let i = 0; i < 5; i++) {
+        for (let k = 1; k <= 10; k++) {
+            if (k < 10 && i === 0) {
+                out += '0';
+            }
+            out += `${10*i+k}_`;
+        }
+        out += '<br>';
+    }
+    document.querySelector('.out-10').innerHTML = out;
 }
+
 
 document.querySelector('.b-10').onclick = t10;
