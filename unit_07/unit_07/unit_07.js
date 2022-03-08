@@ -45,8 +45,9 @@ document.querySelector('.b-3-2').onclick = function () {
 // Task 4
 // Напишите функцию t4 которая принимает ваш год рождения  и вычисляет (возвращает) ваш возраст. 
 
-function t4(year) {
-
+function t4() {
+    let a = 1994;
+    return a;
 }
 
 document.querySelector('.b-4').onclick = function () {
