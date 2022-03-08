@@ -15,8 +15,8 @@ document.querySelector('.b-1').onclick = t1;
 
 let a2 = 8;
 function t2() {
-
-    //return
+return a2;
+    
 }
 
 document.querySelector('.b-2').onclick = function () {
