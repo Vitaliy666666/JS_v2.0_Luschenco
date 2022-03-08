@@ -60,7 +60,9 @@ document.querySelector('.b-4').onclick = function () {
 
 
 function t5(yourName) {
-
+    let name = 'Vitaliy';
+    let b = name.length;
+    return b;
 }
 
 document.querySelector('.b-5').onclick = function () {
