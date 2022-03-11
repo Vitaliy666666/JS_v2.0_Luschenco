@@ -11,7 +11,6 @@ function t1() {
     while(a <= 50){
         out1 += a + '_'; 
         a++;
-
     }
     out.innerHTML = out1;
 }
@@ -30,7 +29,6 @@ function t2() {
     while(a <= 46){
         out1 += a + '_'; 
         a = a+2;
-
     }
     out.innerHTML = out1;
 }
@@ -50,7 +48,6 @@ function t3() {
     while(a > 6){
         out1 += a + '_'; 
         a--;
-
     }
     out.innerHTML = out1;
 }
@@ -70,7 +67,6 @@ function t4() {
     while(a > 32){
         out1 += a + '_'; 
         a = a - 3;
-
     }
     out.innerHTML = out1
 }
@@ -84,7 +80,19 @@ document.querySelector('.b-4').onclick = t4;
 // от 1 до 17 c шагом 1. Разделитель - знак подчеркивания и одна звездочка если число нечетное, и две звездочки если четное. Задача решается с помощью цикла  while.
 
 function t5() {
-
+    let out = document.querySelector('.out-5');
+    let a = 1;
+    let out1 = '';
+    while(a < 18){
+        if(a % 2 == 0){
+            out1 += a + '_**';
+        }
+        else{
+            out1 += a + '_*';
+        }
+        a++
+    }
+    out.innerHTML = out1;
 }
 
 document.querySelector('.b-5').onclick = t5;
