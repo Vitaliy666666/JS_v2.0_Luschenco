@@ -64,7 +64,15 @@ document.querySelector('.b-3').onclick = t3;
 
 
 function t4() {
+    let out = document.querySelector('.out-4');
+    let a = 77;
+    let out1 = ''
+    while(a > 32){
+        out1 += a + '_'; 
+        a = a - 3;
 
+    }
+    out.innerHTML = out1
 }
 
 document.querySelector('.b-4').onclick = t4;
