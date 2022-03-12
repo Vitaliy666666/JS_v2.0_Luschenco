@@ -179,7 +179,16 @@ document.querySelector('.b-8').onclick = t8;
 // Задача решается с помощью цикла. Подсказка - вначале делаем проверку и при необходимости поменять местами значения в переменных местами, а потом запускаем цикл  while.
 
 function t9() {
-
+    let out = document.querySelector('.out-9');
+    let inp1 = document.querySelector('.i-91').value;
+    let inp2 = document.querySelector('.i-92').value;
+    let out1 = '';
+    let a = 0;
+    while(inp1 <= inp2){
+        out1 += inp1 + '_';
+        inp1++
+    }
+    out.innerHTML = out1;
 }
 
 document.querySelector('.b-9').onclick = t9;
@@ -190,7 +199,14 @@ document.querySelector('.b-9').onclick = t9;
 // Разделитель знак подчеркивания. Задача решается через цикл, а четность - через шаг (равный 2).
 
 function t10() {
-
+    let out = document.querySelector('.out-10');
+    let out1 = '';
+    let a = 1950;
+    while(a < 1966){
+       a = a + 2;
+        out1 += a + '_';
+        out.innerHTML = out1;
+    }
 }
 
 document.querySelector('.b-10').onclick = t10;
