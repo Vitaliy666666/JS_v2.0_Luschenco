@@ -182,15 +182,20 @@ function t9() {
     let out = document.querySelector('.out-9');
     let inp1 = document.querySelector('.i-91').value;
     let inp2 = document.querySelector('.i-92').value;
-    let out1 = '';
-    let a = 0;
-    while(inp1 <= inp2){
-        out1 += inp1 + '_';
-        inp1++
+    if(inp1 < inp2){
+        while(inp1 <= inp2){
+            out.innerHTML += inp1 + '_';
+            inp1++
+        }
     }
-    out.innerHTML = out1;
+    else if(inp1 > inp2) {
+        [inp1,inp2] = [inp2, inp1];
+        while (inp1 <= inp2){
+            out.innerHTML += inp1 + '_';
+            inp1++
+        }
 }
-
+}
 document.querySelector('.b-9').onclick = t9;
 
 
@@ -243,7 +248,6 @@ document.querySelector('.b-11').onclick = t11;
 
 function t12() {
     let divs12 = document.querySelectorAll('.div-12');
-   // let out11 = document.querySelector('.out-12');
     let i = 0;
     while(i < divs12.length){
         divs12[i].style.background = 'orange';
@@ -297,7 +301,9 @@ document.querySelector('.b-14').onclick = t14;
 // Для вывода использовать цикл  while. Разделитель подчеркивание.
 
 function t15() {
-
+    let out14 = document.querySelector('.out-15');
+    let i = 77;
+   // while(i  )
 }
 
 document.querySelector('.b-15').onclick = t15;
