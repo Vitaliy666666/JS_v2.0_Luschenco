@@ -25,7 +25,8 @@ document.querySelector('.b-2').onclick = f2;
 // По нажатию кнопки .b-3 запускайте функцию f3, которая удаляет у блока .out-3 класс .bg-orange.
 
 function f3() {
-
+    out3 = document.querySelector('.out-3');
+    out3.classList.remove('bg-orange');
 }
 
 document.querySelector('.b-3').onclick = f3;
