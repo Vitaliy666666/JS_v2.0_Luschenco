@@ -36,7 +36,7 @@ document.querySelector('.b-3').onclick = f3;
 
 
 function f4() {
-
+    document.querySelector('.out-4').classList.toggle('bg-orange')
 }
 
 document.querySelector('.b-4').onclick = f4;
