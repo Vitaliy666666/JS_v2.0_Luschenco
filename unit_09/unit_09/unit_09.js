@@ -62,7 +62,11 @@ document.querySelector('.b-5').onclick = f5;
 // По нажатию .b-6 запускайте функцию f6, которая выводит в .out-6 количество параграфов с классом .p-6.
 
 function f6() {
-
+    out6 = document.querySelector('.out-6');
+    let sum = document.querySelectorAll('.p-6');
+    for( let i = 0; i <= sum.length; i++){
+        out6.innerHTML = i;
+    }
 }
 
 document.querySelector('.b-6').onclick = f6;
