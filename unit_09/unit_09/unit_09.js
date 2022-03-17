@@ -139,7 +139,8 @@ for(let i = 0; i < div10.length; i++){
 
 
 function f11() {
-
+    let out11 = document.querySelector('.out-11');
+    
 }
 
 document.querySelector('.b-11').onclick = f11;
