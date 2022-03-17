@@ -109,7 +109,7 @@ document.querySelector('.b-8').onclick = f8;
 // Усложним предыдущие задачи. С помощью цикла повесим на блоки .out-9 событие клик. По клику должна выполняться функция f9. Функция, должна добавлять класс .bg-orange тому .out-9 на котором кликнули.
 
 function f9() {
-    //this.classList...  // все решается одной строкой
+    this.classList.add('bg-orange');  // все решается одной строкой
 }
 
 let div9 = document.querySelectorAll('.out-9');
