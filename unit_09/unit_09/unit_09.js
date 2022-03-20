@@ -126,7 +126,7 @@ let div10 = document.querySelectorAll('.out-10');
 function f10() {
     this.classList.toggle('bg-orange');
 }
-for(let i = 0; i < div10.length; i++){
+for (let i = 0; i < div10.length; i++){
     div10[i].onclick = f10;
 }
 
@@ -139,8 +139,9 @@ for(let i = 0; i < div10.length; i++){
 
 
 function f11() {
-    let out11 = document.querySelector('.out-11');
-    
+    let a = document.createElement('div');
+    a.innerHTML = 25;
+    document.querySelector('.out-11').append(a);
 }
 
 document.querySelector('.b-11').onclick = f11;
