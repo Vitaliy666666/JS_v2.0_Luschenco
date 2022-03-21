@@ -151,6 +151,17 @@ document.querySelector('.b-11').onclick = f11;
 
 
 function f12() {
+    let out12 = document.querySelector('.out-12');
+    let a = document.createElement('div');
+    a.innerHTML = 12;
+    a.classList.add('bg-12');
+    out12.append(a);
+    //let div = document.createElement('div');
+    //div.classList.add('bg-12');
+    //div.innerHTML = 12;
+    //document.querySelector('.out-12').append(div);
+
+
 
 }
 
