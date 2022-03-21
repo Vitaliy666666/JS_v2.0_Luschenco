@@ -243,7 +243,12 @@ document.querySelector('.b-18').onclick = f18;
 // Кнопкa .b-19, которая запускает функцию f19. Функция с помощью getAttribute получает data-b атрибут с параграфов p-19 и выводит в .out-19 через пробел. Обратите внимание, что элементов .p-19 больше одного.
 
 function f19() {
-
+    let p = document.querySelectorAll('.p-19');
+    let out = '';
+    for(i = 0;i < p.length; i++){
+       out += p[i].getAttribute('data-b') + ' '; 
+    }
+    document.querySelector('.out-19').innerHTML = out;
 }
 
 document.querySelector('.b-19').onclick = f19;
