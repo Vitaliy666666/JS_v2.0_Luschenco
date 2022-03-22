@@ -15,11 +15,11 @@ document.querySelector('.b-1').onclick = f1;
 // let ar2 = // переменную обьявляем здесь!!!!
 
 function f2() {
-    // let out = '';
-    // for (let i = 0; i < ar2.length; i++) {
-    //     out +=ar2[i]+' ';
-    // }
-    // document.querySelector('.out-2').innerHTML = out;
+    let out = '';
+    for (let i = 0; i < ar2.length; i++) {
+        out +=ar2[i]+' ';
+    }
+    document.querySelector('.out-2').innerHTML = out;
 }
 
 document.querySelector('.b-2').onclick = f2;
