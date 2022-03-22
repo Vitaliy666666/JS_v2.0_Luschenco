@@ -67,7 +67,7 @@ document.querySelector('.b-4').onclick = f4;
     let ar5 = [1,2,3,4,5,6,7,8,9,10];
 
 function f5() {
-    out = ar5[0] + ar5[3] + ar5[8];
+    out = ar5[0] + ar5[2] + ar5[3];
     document.querySelector('.out-5').innerHTML = out;
 }
 
@@ -79,9 +79,12 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод - по нажатию кнопки b-6
 // Вывод в out-6
 
-// let ar6 =
+    let ar6 = ['Vitaliy', 'Gemini', 18, 6];
 
 function f6() {
+    out = ar6[0] + ' ' + ar6[1] + '  '+ ar6[2] + ' ' +ar6[3];
+    document.querySelector('.out-6').innerHTML = out;
+
 }
 
 document.querySelector('.b-6').onclick = f6;
