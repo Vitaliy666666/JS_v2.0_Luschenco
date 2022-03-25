@@ -177,7 +177,7 @@ function f11() {
     let a = ar11[2];
     ar11[2] = ar11[4];
     ar11[4] = a;
-    console.log(ar11)
+    document.querySelector('.out-11').innerHTML = ar11;
 }
 
 document.querySelector('.b-11').onclick = f11;
@@ -192,7 +192,10 @@ document.querySelector('.b-11').onclick = f11;
 let ar12 = ['test', 'west', 'list', 'class', 'best'];
 
 function f12() {
-
+    let a = ar11[0];
+    ar11[0] = ar11[ar11.length-1];
+    ar11[ar11.length-1] = a;
+    document.querySelector('.out-12').innerHTML = ar12;
 }
 
 document.querySelector('.b-12').onclick = f12;
