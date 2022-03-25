@@ -174,7 +174,10 @@ document.querySelector('.b-10').onclick = f10;
 let ar11 = [2, 3, 4, 5, 6, 7];
 
 function f11() {
-
+    let a = ar11[2];
+    ar11[2] = ar11[4];
+    ar11[4] = a;
+    console.log(ar11)
 }
 
 document.querySelector('.b-11').onclick = f11;
