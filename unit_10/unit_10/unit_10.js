@@ -355,7 +355,13 @@ document.querySelector('.b-18').onclick = f18;
 let ar19 = [15, 424, 313, 78, 241, 4, 45, 67];
 
 function f19() {
-
+    let min = ar19[0];
+        for(i = 0; i < ar19.length;i++){
+            if(ar19[i] < min){
+                min = ar19[i];
+            }
+        }
+    document.querySelector('.out-19').innerHTML = min; 
 }
 
 document.querySelector('.b-19').onclick = f19;
