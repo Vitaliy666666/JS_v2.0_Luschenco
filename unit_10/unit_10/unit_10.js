@@ -272,7 +272,34 @@ let ar16_odd = [];
 let ar16_even = [];
 
 function f16() {
+// очищаем массивы - если функция будет запускаться еще раз
+ar16_odd = [];
+ar16_even = [];
 
+// перебираем исходный массив
+for (let i = 0 ; i < ar16.length; i++) {
+    if (ar16[i] % 2 === 0) {
+// если число четное то добавляем в even
+        ar16_even [ ar16_even.length ] = ar16[i];
+}
+    else {
+        ar16_odd [ ar16_odd.length ] = ar16[i];
+}
+}
+
+// все массивы заполнены. Их нужно вывести.
+// выводим первый
+let out = '';
+for (let i =0; i < ar16_even.length; i++) {
+    out += ar16_even[i]+' ';
+}
+document.querySelector('.out-16-even').innerHTML = out;
+// выводим второй
+out = '';
+for (let i =0; i < ar16_odd.length; i++) {
+    out += ar16_odd[i]+' ';
+}
+document.querySelector('.out-16-odd').innerHTML = out;
 }
 
 document.querySelector('.b-16').onclick = f16;
