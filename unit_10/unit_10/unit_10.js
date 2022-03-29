@@ -281,18 +281,17 @@ for (let i = 0 ; i < ar16.length; i++) {
     if (ar16[i] % 2 === 0) {
 // если число четное то добавляем в even
         ar16_even [ ar16_even.length ] = ar16[i];
-}
+    }
     else {
         ar16_odd [ ar16_odd.length ] = ar16[i];
+    }
 }
-}
-
 // все массивы заполнены. Их нужно вывести.
 // выводим первый
 let out = '';
 for (let i =0; i < ar16_even.length; i++) {
     out += ar16_even[i]+' ';
-}
+    }
 document.querySelector('.out-16-even').innerHTML = out;
 // выводим второй
 out = '';
@@ -313,7 +312,13 @@ document.querySelector('.b-16').onclick = f16;
 let ar17 = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 
 function f17() {
-
+    let out ='';
+    for(i = 0;i < ar17.length;i++){
+        if(ar17[i] > 3){
+            out += ar17[i];    
+        }
+    }
+    document.querySelector('.out-17').innerHTML = out.length; 
 }
 
 document.querySelector('.b-17').onclick = f17;
