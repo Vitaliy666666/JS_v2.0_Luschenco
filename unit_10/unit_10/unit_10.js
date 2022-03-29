@@ -361,7 +361,7 @@ function f19() {
                 min = ar19[i];
             }
         }
-    document.querySelector('.out-19').innerHTML = min; 
+    document.querySelector('.out-19').innerHTML = min;     
 }
 
 document.querySelector('.b-19').onclick = f19;
@@ -375,7 +375,10 @@ document.querySelector('.b-19').onclick = f19;
 let ar20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
-
+let sum = 0;
+    for(i = 0; i < ar20.length;i++){
+        sum =  sum + ar20[i];
 }
-
+document.querySelector('.out-20').innerHTML = sum;
+}
 document.querySelector('.b-20').onclick = f20;
