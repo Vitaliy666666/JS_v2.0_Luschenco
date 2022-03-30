@@ -12,9 +12,8 @@ function showArr(domElem, arr) {
 let d1 = [33, 'best', 66, 'best'];
 
 function f1() {
-    let inp = document.querySelector('.i-1')
+    let inp = document.querySelector('.i-1');
     d1.push(inp.value);
-
     showArr('.out-1', d1);
 }
 
@@ -25,7 +24,7 @@ document.querySelector('.b-1').onclick = f1;
 // функция выполняется при нажатии кнопки b-2
 
 function f2() {
-
+    d1.pop()
     showArr('.out-2', d1);
 }
 
