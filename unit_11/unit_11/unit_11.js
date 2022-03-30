@@ -47,7 +47,8 @@ document.querySelector('.b-3').onclick = f3;
 
 
 function f4() {
-
+    let inp = document.querySelector('.i-4');
+    d1.push(inp.value);
     showArr('.out-4', d1);
 }
 
