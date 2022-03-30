@@ -35,7 +35,7 @@ document.querySelector('.b-2').onclick = f2;
 // функция выполняется при нажатии кнопки b-3
 
 function f3() {
-    d1.shift()
+    d1.shift();
     showArr('.out-3', d1);
 }
 
@@ -59,7 +59,8 @@ document.querySelector('.b-4').onclick = f4;
 // функция выполняется при нажатии кнопки b-5
 
 function f5() {
-
+    let inp = document.querySelector('.i-5');
+    d1.unshift(inp.value);
     showArr('.out-5', d1);
 }
 
