@@ -35,7 +35,7 @@ document.querySelector('.b-2').onclick = f2;
 // функция выполняется при нажатии кнопки b-3
 
 function f3() {
-
+    d1.shift()
     showArr('.out-3', d1);
 }
 
