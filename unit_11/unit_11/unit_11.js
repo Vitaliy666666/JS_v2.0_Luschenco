@@ -239,8 +239,10 @@ document.querySelector('.b-14').onclick = f14;
 let d15 = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 function f15() {
-
-
+    let inp = +document.querySelector('.i-15').value;
+    if(d15.indexOf(inp) === - 1){
+        document.querySelector('.out-12').innerHTML = d15.push(inp)
+    }
     showArr('.out-15', d15);
 }
 
