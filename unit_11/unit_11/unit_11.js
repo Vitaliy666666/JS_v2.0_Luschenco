@@ -113,7 +113,6 @@ function f8() {
         m.push(d8[i]);
     }
     d8 = m;
-    //console.log()
     showArr('.out-8', d8);
 }
 
@@ -200,6 +199,12 @@ document.querySelector('.b-12').onclick = f12;
 let d13 = [6, 0, 22, 1, 4, 76];
 
 function f13() {
+    let t = [];
+    for(i = d13.length - 1; i > 0;i--){
+        t.push(d13[i]);
+    }
+    d13 = t;
+    //console.log(t)
 
     showArr('.out-13', d13);
 }
