@@ -204,8 +204,6 @@ function f13() {
         t.push(d13[i]);
     }
     d13 = t;
-    //console.log(t)
-
     showArr('.out-13', d13);
 }
 
@@ -221,7 +219,12 @@ document.querySelector('.b-13').onclick = f13;
 let d14 = [];
 
 function f14() {
-
+    d14 = []
+    let inp = +document.querySelector('.i-14').value;
+    for(let i = 0; i < inp; i++){
+        d14.push(1)
+    }
+    console.log(d14);
     showArr('.out-14', d14);
 }
 
