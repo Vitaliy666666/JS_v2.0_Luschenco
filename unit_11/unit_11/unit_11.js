@@ -75,7 +75,9 @@ document.querySelector('.b-5').onclick = f5;
 let d6 = ['test', 5, 12];
 
 function f6() {
-
+    let inp = document.querySelector('.i-6');
+    d6[d6.length] = inp.value
+    console.log()
     showArr('.out-6', d6);
 }
 
