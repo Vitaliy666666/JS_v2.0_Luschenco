@@ -147,7 +147,7 @@ document.querySelector('.b-9').onclick = f9;
 let d10 = [3, 14, 15, 92, 6];
 
 function f10() {
-
+    d10.reverse();
     showArr('.out-10', d10);
 }
 
