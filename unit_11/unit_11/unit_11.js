@@ -76,8 +76,7 @@ let d6 = ['test', 5, 12];
 
 function f6() {
     let inp = document.querySelector('.i-6');
-    d6[d6.length] = inp.value
-    console.log()
+    d6[d6.length] = inp.value;
     showArr('.out-6', d6);
 }
 
@@ -92,7 +91,8 @@ document.querySelector('.b-6').onclick = f6;
 let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
-
+    //delete d7[d7.length -1];
+    d7.length = d7.length - 1;
     showArr('.out-7', d7);
 }
 
