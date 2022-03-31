@@ -180,7 +180,12 @@ document.querySelector('.b-11').onclick = f11;
 let d12 = [6, 62, 60, 70, 1, 5];
 
 function f12() {
-
+    let r = +document.querySelector('.i-12').value;
+    for(i=0;i<d12.length;i++){
+        if(d12[i] == r){
+            document.querySelector('.out-12').innerHTML = i;
+        }
+    }
 }
 
 document.querySelector('.b-12').onclick = f12;
