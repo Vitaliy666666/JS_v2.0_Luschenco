@@ -91,7 +91,6 @@ document.querySelector('.b-6').onclick = f6;
 let d7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
-    //delete d7[d7.length -1];
     d7.length = d7.length - 1;
     showArr('.out-7', d7);
 }
@@ -107,7 +106,14 @@ document.querySelector('.b-7').onclick = f7;
 let d8 = [2, '4', 12, 67, 'hello'];
 
 function f8() {
-
+    let inp = document.querySelector('.i-8');
+    let m = [];
+    m.push(inp.value)
+    for(i = 0; i < d8.length;i++){
+        m.push(d8[i]);
+    }
+    d8 = m;
+    console.log()
     showArr('.out-8', d8);
 }
 
