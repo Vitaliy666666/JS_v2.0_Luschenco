@@ -113,7 +113,7 @@ function f8() {
         m.push(d8[i]);
     }
     d8 = m;
-    console.log()
+    //console.log()
     showArr('.out-8', d8);
 }
 
@@ -128,7 +128,11 @@ document.querySelector('.b-8').onclick = f8;
 let d9 = [100, 200, 300, 400, 700, 121];
 
 function f9() {
-
+    let m =[];
+    for(i = 1; i < d9.length;i++){
+        m.push(d9[i]);
+    }
+    d9 = m;
     showArr('.out-9', d9);
 }
 
