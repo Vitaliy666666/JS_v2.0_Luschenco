@@ -298,7 +298,10 @@ document.querySelector('.b-17').onclick = f17;
 let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
 
 function f18() {
-
+    let s = document.querySelector('.i-18').value;
+    let out = '';
+    out = d18.includes(s);
+    document.querySelector('.out-18').innerHTML = out;
 }
 
 document.querySelector('.b-18').onclick = f18;
