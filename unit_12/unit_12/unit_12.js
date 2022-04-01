@@ -72,7 +72,11 @@ document.querySelector('.b-5').onclick = f5;
 function f6() {
     let out = '';
     let a6 = [[1, 2], [3, 4], [5, 6], [21, 34], [44, 56]];
-
+    for (let i = 0; i < a6.length; i++) {
+        if (a6[i][0] % 2 == 1) out += a6[i][0] + ' ';
+        if (a6[i][1] % 2 == 1) out += a6[i][1] + ' ';
+}
+    document.querySelector('.out-6').innerHTML = out;
 }
 
 document.querySelector('.b-6').onclick = f6;
