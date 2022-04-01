@@ -30,8 +30,8 @@ document.querySelector('.b-2').onclick = f2;
 
 function f3() {
     let a3 = [[1, 2, 3], [3, 4, 5], [6, [7, 'my']]];
-
-    // return
+    document.querySelector('.out-3').innerHTML = a3[2][1][1];
+    return a3[2][1][1];
 }
 
 document.querySelector('.b-3').onclick = f3;
