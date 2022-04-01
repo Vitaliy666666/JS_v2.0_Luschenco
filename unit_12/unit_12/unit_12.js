@@ -162,6 +162,13 @@ function f10() {
         ['st', 21, -34, -43],
         [44, -56, 'task']
     ];
+    for(i = 0;i < a10.length;i++){
+        for(k = 0; k < a10[i].length;k++){
+            if(typeof a10[i][k] === 'string') 
+            out += a10[i][k] + ' ';
+        }
+    }
+    document.querySelector('.out-10').innerHTML = out;
 }
 
 document.querySelector('.b-10').onclick = f10;
