@@ -234,7 +234,7 @@ let a13 = [];
 function f13() {
     let p = 0;
     for (let i = 0 ; i < 8; i++) {
-       let t = [];// сюда складываем вложенный массив
+    let t = [];  // сюда складываем вложенный массив
         for (let k = 0 ; k < 8; k++) {
            if (p % 2 === 0) {
                t.push(1);
@@ -247,7 +247,7 @@ function f13() {
        // здесь нужно в a13 добавить вложенный
        a13.push(t)
    }
-   console.log(a13);
+   //console.log(a13);
 }
 
 document.querySelector('.b-13').onclick = f13;
@@ -265,7 +265,13 @@ let a14 = [
 ];
 
 function f14() {
+    let out = '';
+    for( i=0;i < a14.length; i++){
+            out += a14[i].length + ' ';
 
+    }
+    document.querySelector('.out-14').innerHTML = out;
+    console.log(a14[i].length);
 }
 
 document.querySelector('.b-14').onclick = f14;
