@@ -216,7 +216,7 @@ function f12() {
     for(i = 0; i < a12.length;i++){
         for(k = 0; k < a12[i].length;k++){
             if(a12[i][k]===1){
-                out += a12[i][k];
+                out += a12[i][k] + ' ';
             }
         }
     }
@@ -232,7 +232,22 @@ document.querySelector('.b-12').onclick = f12;
 let a13 = [];
 
 function f13() {
-
+    let p = 0;
+    for (let i = 0 ; i < 8; i++) {
+       let t = [];// сюда складываем вложенный массив
+        for (let k = 0 ; k < 8; k++) {
+           if (p % 2 === 0) {
+               t.push(1);
+           }
+           else {
+               t.push(0);
+           }
+           p++;
+       }
+       // здесь нужно в a13 добавить вложенный
+       a13.push(t)
+   }
+   console.log(a13);
 }
 
 document.querySelector('.b-13').onclick = f13;
