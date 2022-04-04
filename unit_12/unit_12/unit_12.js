@@ -18,7 +18,7 @@ document.querySelector('.b-1').onclick = f1;
 function f2() {
     let a2 = [[12, 'hi'], [45, 87], [55, 13]];
     document.querySelector('.out-2').innerHTML = a2[0][1];
-    return a1[0][1];
+    return a2[0][1];
 }
 
 document.querySelector('.b-2').onclick = f2;
@@ -164,8 +164,9 @@ function f10() {
     ];
     for(i = 0;i < a10.length;i++){
         for(k = 0; k < a10[i].length;k++){
-            if(typeof a10[i][k] === 'string') 
+            if(typeof a10[i][k] === 'string'){
             out += a10[i][k] + ' ';
+            }
         }
     }
     document.querySelector('.out-10').innerHTML = out;
@@ -190,7 +191,7 @@ function f11() {
             out += a11[i][k] + ' '; 
         }
     }
-    console.log(a11[i]);
+    //console.log(a11[i]);
     document.querySelector('.out-11').innerHTML = out;
 
 }
@@ -211,6 +212,16 @@ function f12() {
         [0,1,0,1,0,1,0,1],
         [1,0,1,0,1,0,1,0],
     ];
+    let out = '';
+    for(i = 0; i < a12.length;i++){
+        for(k = 0; k < a12[i].length;k++){
+            if(a12[i][k]===1){
+                out += a12[i][k];
+            }
+        }
+    }
+    document.querySelector('.out-12').innerHTML = out;
+    console.log(a12[i]);
 }
 
 document.querySelector('.b-12').onclick = f12;
