@@ -271,7 +271,6 @@ function f14() {
 
     }
     document.querySelector('.out-14').innerHTML = out;
-    console.log(a14[i].length);
 }
 
 document.querySelector('.b-14').onclick = f14;
@@ -287,9 +286,17 @@ let a15 = [
     [3,4,5,6,7,8],
     [1,2]
 ];
-
 function f15() {
+    let out = '';
+    let ln = a15[0]
+    for( i=0;i < a15.length; i++){
+        if(ln.length < a15[i].length){
+            ln = a15[i];
+        }
+    }
 
+        document.querySelector('.out-15').innerHTML = ln.length;
+    console.log(a15[i].length);
 }
 
 document.querySelector('.b-15').onclick = f15;
