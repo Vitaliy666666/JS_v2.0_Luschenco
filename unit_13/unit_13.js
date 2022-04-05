@@ -143,7 +143,6 @@ function f7() {
     if(a7[key] !== undefined){
         out = 1;
     }
-        
         document.querySelector('.out-7').innerHTML = out;
     }
 
@@ -158,8 +157,16 @@ let a8 = {
 };
 
 function f8() {
-
+    let out = 0;
+    let inp = document.querySelector('.i-8').value;
+    for(let key in a8){
+    if(key === inp){
+        out = 1;
+    }
 }
+    document.querySelector('.out-8').innerHTML = out;
+}
+
 
 document.querySelector('.b-8').onclick = f8;
 
