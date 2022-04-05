@@ -26,8 +26,8 @@ function f2() {
         "two": "mahai",
         "five": "hi"
     };
-
-    // return
+    document.querySelector('.out-2').innerHTML = a2.five;
+    return (a2.five);
 }
 
 document.querySelector('.b-2').onclick = () => {
