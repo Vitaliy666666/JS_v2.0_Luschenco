@@ -138,8 +138,14 @@ let a7 = {
 
 
 function f7() {
-
-}
+    let out = 0;
+    let key = document.querySelector('.i-7').value;
+    if(a7[key] !== undefined){
+        out = 1;
+    }
+        
+        document.querySelector('.out-7').innerHTML = out;
+    }
 
 document.querySelector('.b-7').onclick = f7;
 
