@@ -50,9 +50,9 @@ function f3() {
         "mix": "mix"
     };
     let out = '';
-    for(let key in a3){
-        if(a3[key] === 'hi'){
-            out += a3[key] + ' ';
+    for(let y in a3){
+        if(a3[y] === 'hi'){
+            out += a3[y] + ' ';
         }
     }
     return out;
@@ -77,8 +77,11 @@ let a4 = {
     "mix": "mix"
 };
 function f4() {
-
-    // return out;
+    let out = '';
+    for(let key in a4){
+        out += key + ' ' + a4[key] + '<br>';
+    }
+    return out;
 }
 
 document.querySelector('.b-4').onclick = () => {
