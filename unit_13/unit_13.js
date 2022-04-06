@@ -271,9 +271,8 @@ function f13() {
     let out = 0;
     for( let key in a13){
         if(typeof (a13[key]) === 'number') 
-        out += a13[key] 
+        out += a13[key]; 
     }
-        console.log(a13[key])
     document.querySelector('.out-13').innerHTML = out;
 }
 
@@ -291,7 +290,11 @@ let a14 = {
 };
 
 function f14() {
-
+    let out = '';
+    for( let key in a14){
+        out += a14[key][0] + ' ';
+    }
+    document.querySelector('.out-14').innerHTML = out;
 }
 
 document.querySelector('.b-14').onclick = f14;
