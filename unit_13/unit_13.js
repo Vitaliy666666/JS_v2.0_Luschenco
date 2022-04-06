@@ -312,6 +312,12 @@ let a15 = {
 };
 
 function f15() {
+    let out = '';
+    for( let key in a15){
+        for (let i = 0; i < a15[key].length; i++)
+            out += a15[key][i] + ' ';
+    }
+    document.querySelector('.out-15').innerHTML = out;
 
 }
 
