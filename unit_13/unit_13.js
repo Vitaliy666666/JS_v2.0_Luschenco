@@ -228,11 +228,8 @@ let a11 = {
 
 function f11() {
     let inp = document.querySelector('.i-11').value;
-    //for( let key in a11){
-     //   if(a11[key] == inp)
         delete a11[inp]
         f5(a11, '.out-11')
-    //}
     }
 
 
@@ -250,7 +247,13 @@ let a12 = {
 };
 
 function f12() {
+    let out = '';
+    let inp = +document.querySelector('.i-12').value;
+    for(let key in a12){
+        if(a12[key] === inp) delete a12[key];
 
+    }
+    f5(a12, '.out-12');
 }
 
 document.querySelector('.b-12').onclick = f12;
