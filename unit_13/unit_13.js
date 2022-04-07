@@ -371,7 +371,12 @@ let a17 = {
 }
 
 function f17() {
-
+    let out = '';
+    for( let key in a17){
+        if(a17[key]['age'] > 30 )
+        out += a16[key]['name'];            
+}
+    document.querySelector('.out-17').innerHTML = out;
 }
 
 document.querySelector('.b-17').onclick = f17;
