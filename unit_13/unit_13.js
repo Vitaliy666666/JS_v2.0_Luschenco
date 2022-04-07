@@ -391,7 +391,14 @@ let a18 = {
 }
 
 function f18() {
-
+    let branch = document.querySelector('.i-18').value;
+    let out = '';
+    if (a18[branch] !== undefined) {
+    for (let i = 0; i < a18[branch].length; i++) {
+    out += a18[branch][i];
+    }
+    }
+    document.querySelector('.out-18').innerHTML = out;
 }
 
 // Task 19
@@ -405,7 +412,16 @@ let a19 = {
 }
 
 function f19() {
-
+    let out='';
+    let i19 = document.querySelector(".i-19").value.toLowerCase();
+    for (let key in a19) {
+        //console.log(a19[key]);
+        for (let i = 0;i<a19[key].length;i++) {
+            if (a19[key][i].toLowerCase()==i19) out = key;
+            break;
+        }
+    }
+    document.querySelector(".out-19").innerHTML=out;
 }
 
 document.querySelector('.b-19').onclick = f19;
@@ -420,7 +436,14 @@ let a20 = {
 }
 
 function f20() {
-
+let out = '';
+    for(let key in a20){
+        for(i = 0; i < a20[key].length;i++){
+            if (a20[key][i][1] === 2)
+             out += a20[key][i][0] + ' ';
+        }
+}
+document.querySelector(".out-20").innerHTML=out;
 }
 
 document.querySelector('.b-20').onclick = f20
