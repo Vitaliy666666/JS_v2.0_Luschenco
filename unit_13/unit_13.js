@@ -314,7 +314,7 @@ let a15 = {
 function f15() {
     let out = '';
     for( let key in a15){
-        for (let i = 0; i < a15[key].length; i++)
+       for (let i = 0; i < a15[key].length; i++)
             out += a15[key][i] + ' ';
     }
     document.querySelector('.out-15').innerHTML = out;
@@ -342,7 +342,11 @@ let a16 = {
 }
 
 function f16() {
-
+    let out = '';
+    for( let key in a16){
+        out += a16[key]['name'] + ' ';            
+}
+    document.querySelector('.out-16').innerHTML = out;
 }
 
 document.querySelector('.b-16').onclick = f16;
