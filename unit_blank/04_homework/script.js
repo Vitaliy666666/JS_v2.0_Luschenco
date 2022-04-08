@@ -18,7 +18,9 @@ function getWeather() {
     function showWeather(data) {
         console.log(data);
         document.querySelector('.сity').innerHTML = data.name;
-        document.querySelector('.temperature').innerHTML = data.main;
+        document.querySelector('.temperature').innerHTML = `${Math.round(data.main.temp)}&degC`;
+        document.querySelector('.wind_speed').innerHTML = data.wind.speed;
+        document.querySelector('.weather').innerHTML = data.clouds.all;
     }
 }
 getWeather();
