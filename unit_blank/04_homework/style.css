@@ -7,21 +7,25 @@ body {
 
 *{
 text-align: center;
-color: rgb(237, 169, 10);
+color: rgb(47, 56, 56);
 }
 .box{
+    background: linear-gradient(90deg, #b9deed, #efefef);
     padding: 20px;
     height: 400px;
     width: 250px;
-    border: 3px rgb(107, 147, 149) solid;
+    border: 3px rgb(147, 155, 155) solid;
     border-radius: 3%;
 
 }
 body .сity{
+    color:aliceblue;
+    font-size: 250%;
+    text-shadow: 1px 1px 2px;
     display: block;
     height: 50px;
     border: 2px rgb(0, 0, 0) solid;
-    border-radius: 3%;
+    border-radius: 5%;
     text-align: center;
 }
     
@@ -29,7 +33,6 @@ body .temperature{
     margin: 10px;
     display: block;
     height: 40px;
-    border: 1px rgb(35, 27, 19) solid;
     border-radius: 3%;
     font-size:35px ;
 }
@@ -37,14 +40,13 @@ body .weather{
     margin: 5px;
     display: block;
     height: 30px;
-    border: 1px rgb(38, 131, 74) solid;
     border-radius: 3%;
     font-size:20px;
 }
 body .wind_speed{
     display: block;
     height: 30px;
-    border: 1px rgb(122, 38, 131) solid;
+
     border-radius: 3%;
     font-size:20px;
 }

@@ -19,8 +19,9 @@ function getWeather() {
         console.log(data);
         document.querySelector('.сity').innerHTML = data.name;
         document.querySelector('.temperature').innerHTML = `${Math.round(data.main.temp)}&degC`;
-        document.querySelector('.wind_speed').innerHTML = data.wind.speed;
-        document.querySelector('.weather').innerHTML = data.clouds.all;
+        document.querySelector('.wind_speed span').innerHTML = data.wind.speed;
+        document.querySelector('.weather span').innerHTML = data.clouds.all;
+        document.querySelector('.img').innerHTML = '<img src ="https://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png">';
     }
 }
 getWeather();
