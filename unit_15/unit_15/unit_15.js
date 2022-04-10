@@ -32,7 +32,11 @@ document.querySelector('.b-2').onclick = f2;
 
 let s3 = new Set(['one', 'two', 'four']); // обратите внимание, как просто можно добавить массив в набор!
 
-const f3 = () => { }
+const f3 = () => {
+    let a = document.querySelector('.i-3').value;
+    s3.delete(a);
+    console.log(s3);
+ }
 
 document.querySelector('.b-3').onclick = f3;
 
